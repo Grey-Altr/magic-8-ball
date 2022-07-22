@@ -41,6 +41,16 @@ section {
     padding: 35px 50px;
 }
 
+textarea {
+    width: 250px;
+    height: 100px;
+    resize: vertical;
+}
+
+#answer-section {
+    padding: 20px;
+}
+
 footer {
     position: sticky;
     bottom: 0;
