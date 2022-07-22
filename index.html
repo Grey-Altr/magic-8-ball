@@ -12,20 +12,89 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
+    <title>🎱 Thee Majick 8 Ball</title>
 </head>
 
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>🎱 Thee Majick 8 Ball 🎱</h1>
     </header>
 
     <main>
+        <section id="question-section">
+            <label>What is your question?</label>
+            <textarea id="asked-question"></textarea>
+            <button id="ask-button">Now shake it!</button>
+        </section>
+
+        <section id="answer-section" class="hidden">
+            <p id="question-display"></p>
+            <div class="toy" id="toy"><!--(8ball html/css/js by Bence Szabo https://codepen.io/finnhvman/pen/wrLPJz)-->
+                <form class="ball" id="ball">
+                    <div class="window"></div>
+                    <div class="eight">
+                        <span>8</span>
+                    </div>
+
+                    <div class="answers" >
+                        <!-- Affirmatives -->
+                        <input id="1" type="radio" name="answer" required>
+                        <div class="answer up">It is<br>certain</div>
+                        <input id="2" type="radio" name="answer" required>
+                        <div class="answer up">It is<br>decidedly<br>so</div>
+                        <input id="3" type="radio" name="answer" required>
+                        <div class="answer down">Without<br>a<br>doubt</div>
+                        <input id="4" type="radio" name="answer" required>
+                        <div class="answer up">Yes<br>definitely</div>
+                        <input id="5" type="radio" name="answer" required>
+                        <div class="answer down">You may<br>rely<br>on it</div>
+                        <input id="6" type="radio" name="answer" required>
+                        <div class="answer down">As I<br>see it,<br>yes</div>
+                        <input id="7" type="radio" name="answer" required>
+                        <div class="answer up">Most<br>likely</div>
+                        <input id="8" type="radio" name="answer" required>
+                        <div class="answer down">Outlook<br>good</div>
+                        <input id="9" type="radio" name="answer" required>
+                        <div class="answer down">Yes</div>
+                        <input id="10" type="radio" name="answer" required>
+                        <div class="answer down">Signs<br>point to<br>yes</div>
+
+                        <!-- Non-comittals -->
+                        <input id="11" type="radio" name="answer" required>
+                        <div class="answer down">Reply hazy<br>try<br>again</div>
+                        <input id="12" type="radio" name="answer" required>
+                        <div class="answer up">Ask<br>again<br>later</div>
+                        <input id="13" type="radio" name="answer" required>
+                        <div class="answer down">Better not<br>tell you<br>now</div>
+                        <input id="14" type="radio" name="answer" required>
+                        <div class="answer down">Cannot<br>predict<br>now</div>
+                        <input id="15" type="radio" name="answer" required>
+                        <div class="answer down">Concentrate<br>and ask<br>again</div>
+
+                        <!-- Negatives -->
+                        <input id="16" type="radio" name="answer" required>
+                        <div class="answer up">Don't<br>count<br>on it</div>
+                        <input id="17" type="radio" name="answer" required>
+                        <div class="answer down">My reply<br>is<br>no</div>
+                        <input id="18" type="radio" name="answer" required>
+                        <div class="answer down">My<br>sources<br>say<br>no</div>
+                        <input id="19" type="radio" name="answer" required>
+                        <div class="answer down">Outlook<br>not so<br>good</div>
+                        <input id="20" type="radio" name="answer" required>
+                        <div class="answer up">Very<br>doubtful</div>
+                    </div>
+
+                </form>
+                
+                <div class="instruction">
+            </div>
+            <p id="answer-display"></p>
+        </section>
 
     </main>
 
-    <footer>&copy;2022 Software Developer</footer>
+
+    <footer>&copy;2022 GreyCorp., Fate & Fortune Technologies Division</footer>
 
     <script type="module" src="app.js"></script>
 </body>
