@@ -38,13 +38,17 @@ section {
 #question-section {
     justify-items: center;
     gap: 20px;
-    padding: 35px 50px;
+    /* padding: 35px 50px; */
 }
 
 textarea {
     width: 250px;
     height: 100px;
     resize: vertical;
+}
+
+.hidden {
+    display: none;
 }
 
 #answer-section {
