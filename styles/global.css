@@ -35,6 +35,10 @@ section {
     border: 1px solid black;
 }
 
+label {
+    
+}
+
 #question-section {
     justify-items: center;
     gap: 20px;

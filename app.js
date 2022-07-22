@@ -38,28 +38,28 @@ const answers = [
 
 // set event listeners 
 askButton.addEventListener('click', () => {
-  copyQuestion();
-  toggleVisibility();
-  applyAnimations();
-  showRandomAnswer();
+    copyQuestion();
+    toggleVisibility();
+    applyAnimations();
+    showRandomAnswer();
 });
 
 function copyQuestion() {
-  const question = askedQuestion.value;
-  questionDisplay.textContent = question;
+    const question = askedQuestion.value;
+    questionDisplay.textContent = question;
 }
 
 function toggleVisibility() {
-  questionSection.classList.add('hidden');
-  answerSection.classList.remove('hidden');
+    questionSection.classList.add('hidden');
+    answerSection.classList.remove('hidden');
 }
 
 function applyAnimations() {
-  answerDisplay.classList.add('fade-in');
-  crystalBall.classList.add('shake');
+    answerDisplay.classList.add('fade-in');
+    crystalBall.classList.add('shake');
 }
 
 function showRandomAnswer() {
-  const randomAnswer = getRandomItem(answers);
-  answerDisplay.textContent = randomAnswer;
+    const randomAnswer = getRandomItem(answers);
+    answerDisplay.textContent = randomAnswer;
 }
