@@ -19,7 +19,6 @@ askButton.addEventListener('click', () => {
     copyQuestion();
     toggleVisibility();
     applyAnimations();
-    showRandomAnswer();
 });
 
 function copyQuestion() {
