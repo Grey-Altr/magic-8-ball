@@ -29,20 +29,15 @@ section {
     margin: 0 auto;
     width: max-content;
     text-align: center;
-
     display: grid;
+    grid-template-rows: .05fr 1fr;
     background: white;
     border: 1px solid black;
 }
 
-label {
-    height: 100px;
-}
-
 #question-section {
     justify-items: center;
-    gap: 20px;
-    /* padding: 35px 50px; */
+    gap: 10px;
 }
 
 textarea {
@@ -56,13 +51,12 @@ textarea {
 }
 
 #answer-section {
-    padding: 20px;
+    padding: 1px;
 }
 
 #answer-display {
     grid-row: 2;
     grid-column: 1;
-    margin-top: 9.3em;
     margin-left: 0.7em;
     color: white;
     text-shadow: 3px 3px 4px black;
@@ -72,7 +66,6 @@ textarea {
 
 .toy {
     position: relative;
-    margin: 5vmin auto;
     width: 90vmin;
   }
   
@@ -177,7 +170,7 @@ textarea {
   label {
     display: block;
     width: 90vmin;
-    height: 90vmin;
+    height: 50px;
     cursor: pointer;
   }
   
@@ -205,11 +198,11 @@ textarea {
     font-family: sans-serif;
     text-align: center;
     line-height: 45vmin;
-    transition: opacity 1s;
   }
   
   form:valid .eight {
     opacity: 0;
+    transition: opacity 5s ease-in-out;
   }
   
   /* "Uniform distribution" of labels */
@@ -289,4 +282,48 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+p {
+    margin: 5px;
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate(0, 0);
+}
+
+.fade-in {
+  animation: fade-in 0.82s ease-out both;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate(-1px, 0);
+  }
+  
+  20%, 80% {
+    transform: translate(2px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-4px, 0);
+  }
+
+  40%, 60% {
+    transform: translate(4px, 0);
+  }
 }
